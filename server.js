@@ -4,6 +4,8 @@ const PORT = process.env.PORT || 3001;
 const routes = require('./routes');
 const db = require('./models');
 
+require('dotenv').config();
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
